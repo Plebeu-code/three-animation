@@ -3,9 +3,9 @@ import styled from "styled-components";
 export default function TextSection() {
   return (
     <Wrapper>
-      <Title>Three.js in React</Title>
+      <Title>ThreeJS/TS com React</Title>
       <Description>
-        Bring your website to life with beautiful 3D objects
+        Estudando Objetos 3D
       </Description>
     </Wrapper>
   );
