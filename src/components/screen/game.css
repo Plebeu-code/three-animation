@@ -1,0 +1,16 @@
+.gamer {
+  height: 12px;
+  width: 16px;
+  display: flex !important;
+  border-radius: 2px;
+  background-image: url("https://cdn.discordapp.com/attachments/560251522127101972/981649495324491846/gif_axie.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+
+.content036 {
+  z-index: -10;
+}
+

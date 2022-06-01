@@ -6,7 +6,6 @@ import TextSection from "./../../components/textSection";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Box from "./../../components/box/box";
-import Naruto from "./../../components/Naruto.js"
 import Sphere from "./../../components/animationSphere";
 
 export default function Page01() {
@@ -25,12 +24,6 @@ export default function Page01() {
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 10]} intensity={1}/>
         <Sphere/>
-      </Canvas>
-      <Canvas className="narutao">
-        <OrbitControls  enableZoom={false}/>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[10, 10, 10]} intensity={1}/>
-        <Naruto/>
       </Canvas>
     </Wrapper>
   );
