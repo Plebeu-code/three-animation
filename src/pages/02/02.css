@@ -1,18 +1,5 @@
-body,
-html,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
-#root {
-  filter: saturate(1.15) hue-rotate(345deg);
-}
-
-#root * {
+.containert * {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,6 +17,8 @@ html,
 .container {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  filter: saturate(1.15) hue-rotate(345deg);
 }
 
 .canvas2 {
@@ -39,5 +28,6 @@ html,
 }
 
 .canvas2:active {
+  
   cursor: grabbing;
 }
