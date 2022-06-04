@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Naruto({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/naruto.gltf')
+  const { nodes, materials } = useGLTF('./../../models/naruto/naruto.gltf')
   return (
     <group ref={group} {...props} dispose={null} scale={0.2} position={[0.56, 0.23, 0.47]}>
       <group rotation={[-Math.PI / 2, 0, 0.3]}  >

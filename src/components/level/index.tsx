@@ -4,7 +4,7 @@ import { useSpring } from '@react-spring/three'
 
 export default function Level() {
   //@ts-ignore
-  const { nodes } = useGLTF('./../../level-react-draco.glb')
+  const { nodes } = useGLTF('./../../models/bedroom/level-react-draco.glb')
   const { camera } = useThree()
   useSpring(
     () => ({

@@ -3,7 +3,7 @@ import { Float, useGLTF } from '@react-three/drei'
 
 export default function Axie({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('./../../axie.gltf')
+  const { nodes, materials } = useGLTF('./../../models/axie/axie.gltf')
   return (
     <group ref={group} {...props} dispose={null} position={[0.5, 0.8, -1]}  scale={10}>
       <group rotation={[-Math.PI / 2, 0, 0]}>

@@ -4,7 +4,7 @@ import { useSpring, a } from '@react-spring/three'
 
 export default function Camera() {
   //@ts-ignore
-  const { nodes, materials } = useGLTF('./../../level-react-draco.glb')
+  const { nodes, materials } = useGLTF('./../../models/bedroom/level-react-draco.glb')
   const [spring, api] = useSpring(() => ({ 'rotation-z': 0, config: { friction: 40 } }), [])
   useEffect(() => {
     let timeout
