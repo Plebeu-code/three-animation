@@ -9,14 +9,16 @@ import Pyramid from "../../components/payramid";
 import { Html } from "@react-three/drei";
 
 import "./02.css";
-import Naruto from "../../components/Naruto";
 import Axie from "../../components/axie";
 import ScrrenGamer from "../../components/screen";
+import Dance from "../../components/anime";
+import Lofi from "../../components/lofi";
 
 export default function Page02() {
   return (
     <div className="container-bedroom">
       <Canvas flat dpr={[1, 2]} camera={{ fov: 25, position: [0, 0, 8] }}>
+        <gridHelper/>
         <color attach="background" args={["#e0b7ff"]} />
         <ambientLight />
         <PresentationControls
@@ -26,17 +28,18 @@ export default function Page02() {
           polar={[0, Math.PI / 4]}
           azimuth={[-Math.PI / 4, Math.PI / 4]}
         >
-          <group  position-y={-0.75} dispose={null}>
+          <group position-y={-0.75} dispose={null}>
             <Level />
             <Sudo />
             <Camera />
             <Cactus />
             <Icon />
             <Pyramid />
-            <Naruto />
             <Axie />
+            <Dance />
+            <Lofi />
           </group>
-          <mesh >
+          <mesh>
             <Html
               className="content036"
               rotation={[0, 1.59, 0]}

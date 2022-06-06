@@ -1,4 +1,4 @@
-import { OrbitControls, PresentationControls } from "@react-three/drei";
+import { PresentationControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Space from "../../components/superNew";
 import "./page04.css";
@@ -15,8 +15,12 @@ export default function Page04() {
           polar={[0, Math.PI / 4]}
           azimuth={[-Math.PI / 4, Math.PI / 4]}
         >
-          <group  position-y={-0.75} dispose={null}>
+          <group position-y={-0.75} dispose={null}>
+            <gridHelper />
+            <arrowHelper />
             <Space />
+            <boxHelper/>
+            <axesHelper/>
           </group>
         </PresentationControls>
       </Canvas>

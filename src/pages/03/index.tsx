@@ -6,11 +6,11 @@ import HeroPage from '../../components/macbook'
 import './03.css'
 
 
-function Model(props) {
+function MacDraco(props) {
   const group = useRef()
   // Load model
   //@ts-ignore
-  const { nodes, materials } = useGLTF('./../mac-draco.glb')
+  const { nodes, materials } = useGLTF('./../../models/mac-draco/mac-draco.glb')
   // Make it float
   useFrame((state) => {
     const t = state.clock.getElapsedTime()
@@ -56,7 +56,7 @@ export default function Page03() {
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
         <group rotation={[0, Math.PI, 0]}>
-          <Model />
+          <MacDraco />
         </group>
         <Environment preset="city" />
       </Suspense>
