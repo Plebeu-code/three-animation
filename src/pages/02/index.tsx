@@ -18,7 +18,6 @@ export default function Page02() {
   return (
     <div className="container-bedroom">
       <Canvas flat dpr={[1, 2]} camera={{ fov: 25, position: [0, 0, 8] }}>
-        <gridHelper/>
         <color attach="background" args={["#e0b7ff"]} />
         <ambientLight />
         <PresentationControls
