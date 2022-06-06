@@ -6,8 +6,10 @@ export default function Space(props) {
   const group = useRef();
   //@ts-ignore
   const { nodes, materials } = useGLTF("./../../models/space/space.gltf");
+  console.log(materials);
+  
   return (
-    <group ref={group} {...props} dispose={null} position={[-1.5, -0.4, 2]}>
+    <group ref={group} {...props} dispose={null} position={[-1.5, -0.4, 2]} scale={2}>
       <group name="Sketchfab_Scene">
         <group
           name="Sketchfab_model"
