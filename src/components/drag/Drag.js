@@ -9,11 +9,11 @@ export default function Dragon({ ...props }) {
   const { actions } = useAnimations(animations, group)
   
   useEffect(() => {
-    console.log(actions);
+    actions["Take 001"].play()
   })
 
   return (
-    <group ref={group} {...props} dispose={null} position={[0.56, 0.23, 0.47]} scale={0.1}>
+    <group ref={group} {...props} dispose={null} position={[10.56, 1.2, 0.47]} scale={1}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="shimaoge_donghuaFBX" rotation={[Math.PI / 2, 0, 0]}>

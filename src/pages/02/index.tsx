@@ -28,22 +28,20 @@ export default function Page02() {
           azimuth={[-Math.PI / 4, Math.PI / 4]}
         >
           <group position-y={-0.75} dispose={null}>
-            <Level />
-            <Sudo />
-            <Camera />
-            <Cactus />
-            <Icon />
-            <Pyramid />
-            <Axie />
-            <Dance />
-            <Lofi />
+              <Level />
+              <Sudo />
+              <Camera />
+              <Cactus />
+              <Icon />
+              <Pyramid />
+              <Axie />
+              <Dance />
+              <Lofi />
           </group>
           <mesh>
             <Html
               className="content036"
               rotation={[0, 1.59, 0]}
-              // rotation-x={[0]}
-              // rotation-y={[1.59]}
               position={[-0.49, 0.1, 0.62]}
               transform
               occlude
