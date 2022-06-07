@@ -30,11 +30,11 @@ const usePlayerControls = () => {
 
 export const Player = (props) => {
   const axe = useRef()
-  const [ref, api] = useSphere(() => ({ mass: 1, type: "Dynamic", position: [0, 10, 0], ...props }))
+  const [ref, api] = useSphere(() => ({ mass: 1, type: "Dynamic", position: [0, 5, 0], ...props }))
   const { forward, backward, left, right, jump } = usePlayerControls()
   const { camera } = useThree()
   const velocity = useRef([0, 0, 0])
-  useEffect(() => api.velocity.subscribe((v) => (velocity.current = v)), [])
+  useEffect(() => api.velocity.subscribe((v) => (velocity.current = v)))
   useFrame((state) => {
     ref.current.getWorldPosition(camera.position)
     frontVector.set(0, 0, Number(backward) - Number(forward))
@@ -44,7 +44,7 @@ export const Player = (props) => {
     axe.current.children[0].rotation.x = THREE.MathUtils.lerp(
       axe.current.children[0].rotation.x,
       Math.sin((speed.length() > 1) * state.clock.elapsedTime * 10) / 6,
-      0.1,
+      0.3,
     )
     axe.current.rotation.copy(camera.rotation)
     axe.current.position.copy(camera.position).add(camera.getWorldDirection(rotation).multiplyScalar(1))

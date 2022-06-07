@@ -13,7 +13,7 @@ export default function Dragon({ ...props }) {
   })
 
   return (
-    <group ref={group} {...props} dispose={null} position={[10.56, 1.2, 0.47]} scale={1}>
+    <group ref={group} {...props} dispose={null} position={[30.56, 1.2, 0.47]} scale={1}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="shimaoge_donghuaFBX" rotation={[Math.PI / 2, 0, 0]}>
