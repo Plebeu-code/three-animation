@@ -54,12 +54,10 @@ export default function Page03() {
     <div className="content033">
     <Canvas dpr={[1, 2]} camera={{ position: [-10, 0, -25], fov: 35 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
-      <Suspense fallback={null}>
         <group rotation={[0, Math.PI, 0]}>
           <MacDraco />
         </group>
         <Environment preset="city" />
-      </Suspense>
        {/*@ts-ignore*/}
       <ContactShadows rotation-x={Math.PI / 2} position={[0, -4.5, 0]} opacity={1} width={20} height={20} blur={2} far={4.5} />
       <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />

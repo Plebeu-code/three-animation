@@ -17,10 +17,8 @@ export default function Page05() {
         //@ts-ignore
         raycaster={{ computeOffsets: ({ clientX, clientY }) => ({ offsetX: clientX, offsetY: clientY }) }}>
         <ambientLight intensity={1} />
-        <Suspense fallback={null}>
           <ScrollEffect scroll={scroll} />
           <Environment preset="city" />
-        </Suspense>
       </Canvas>
       {/*@ts-ignore*/}
       <Overlay ref={overlay} caption={caption} scroll={scroll} />

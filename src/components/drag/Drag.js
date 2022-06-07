@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Dragon({ ...props }) {
